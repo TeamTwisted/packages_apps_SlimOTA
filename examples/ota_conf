@@ -1,38 +1,46 @@
-#
-# OTA XML
-#
-# See ota_lollipop.xml for example
+# ?xml version="1.0" encoding="UTF-8"?>
+# <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+#      <Stable>
+#         <angler>
+#             <Filename>Twisted-angler-6.0.1-build-3.0-20160122.zip</Filename>
+#             <RomUrl
+#                 id="rom"
+#                 title="Rom"
+#                 description="Download Twisted Angler">http://tinyurl.com/grrw6lk</RomUrl>
+#             <ChangelogUrl
+#                 id="changelog"
+#                 title="Changelog"
+#                 description="Download Twisted Angler changelog">http://tinyurl.com/zhyb64s</ChangelogUrl>
+#             <GAppsUrl
+#                 id="gplus"
+#                 title="Twisted G+ page"
+#                 description="Visit Twisted on G+">https://plus.google.com/communities/109057853246359874777</GAppsUrl>
+#         </angler>
+#     </Stable>
+# </SlimOTA>
 #
 # Note:
 # * Multiple devices can be added in the xml file
 # * You can define any tags that end with 'Url'. These tags will be added in the UI automatically 
 #
-ota_url=https://www.dropbox.com/s/u2k60hvjn2c02h0/ota_lollipop.xml?dl=1
+ota_url=https://www.dropbox.com/s/2u9xm74tw9xq8sc/ota_twisted.xml?dl=1
 release_type=Stable
 device_name=ro.product.device
-
 #
 # VERSION
 #
-# A version can be a date or a number with characters
-# A version source can be a 'property key' from build.prop or a 'uname -r' command line
-# If a version is a number, leave the version_format empty. Otherwise, provide the date format
+# Example: Parse the 20160122 from the version name
 #
-# Example with a property key 'ro.modversion' : Parse the date 20150426 from 'SlimSaber-bacon-5.0.2-20150426'
-#
-# Version source: ro.modversion
+# Version name: Twisted-angler-6.0.1-build-3.0-20160122.zip
 # Version delimiter: -
-# Version position: 3 (zero based)
+# Version position: 5 (zero based)
 # Version format: yyyyMMdd
 #
-# Example with 'uname -r': Parse the number 239 from '3.4.107~AK.239.OPO.CM12.1'
+# Note :
+# * Version name must contain a parseable date
+# * Version name must match with the Filename in the OTA XML file in order to compare the date
 #
-# Version source: uname -r
-# Version delimiter: .
-# Version position: 3 (zero based)
-# Version format:
-#
-version_source=ro.modversion
+version_name=ro.modversion
 version_delimiter=-
-version_position=3
+version_position=5
 version_format=yyyyMMdd

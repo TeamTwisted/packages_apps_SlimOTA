@@ -18,16 +18,16 @@
 <resources>
 
     <!-- App -->
-    <string name="app_name">SlimOTA</string>
-    <string name="app_title">SlimOTA</string>
+    <string name="app_name">Twisted Updates</string>
+    <string name="app_title">Twisted</string>
 
     <!-- Categories -->
-    <string name="ota_category">OTA</string>
-    <string name="links_category">Links</string>
+    <string name="ota_category">Twisted Over The Air</string>
+    <string name="links_category">Twisted Links</string>
 
     <!-- ROM info -->
     <string name="latest_version">Latest version: %1$s</string>
-    <string name="unknown">Unknown</string>
+    <string name="unknown">Unknown (Contact Dev)</string>
     <string name="system_uptodate">Your system is up to date</string>
 
     <!-- Check update -->
@@ -43,7 +43,7 @@
     <string name="autoupdate_disabled">Automatic update is disabled</string>
 
     <!-- Notification -->
-    <string name="notification_title">ROM Update</string>
+    <string name="notification_title">Twisted Update</string>
     <string name="notification_message">New update available!</string>
 
     <!-- Dialog -->

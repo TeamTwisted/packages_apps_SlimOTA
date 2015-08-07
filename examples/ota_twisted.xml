@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+     <Stable>
+        <angler>
+            <Filename>Twisted-angler-6.0.1-build-3.0-20160122.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Twisted Angler">http://tinyurl.com/grrw6lk</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="Download Twisted Angler changelog">http://tinyurl.com/zhyb64s</ChangelogUrl>
+            <GAppsUrl
+                id="gplus"
+                title="Twisted G+ page"
+                description="Visit Twisted on G+">https://plus.google.com/communities/109057853246359874777</GAppsUrl>
+        </angler>
+    </Stable>
+</SlimOTA>
