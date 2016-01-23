@@ -24,7 +24,10 @@
     <!-- Categories -->
     <string name="ota_category">OTA</string>
     <string name="links_category">Links</string>
-
+	
+	<!-- Insert download link for rom -->
+	<string name="download_url">https://renderserver.net/browse?path=xwasabi-twisted/Twisted%20Angler/rc</string>
+	
     <!-- ROM info -->
     <string name="latest_version">Latest version: %1$s</string>
     <string name="unknown">Unknown</string>

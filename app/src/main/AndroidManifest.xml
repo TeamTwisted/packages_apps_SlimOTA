@@ -32,6 +32,13 @@
                 android:name="com.commonsware.cwac.wakeful"
                 android:resource="@xml/wakeful"/>
         </receiver>
+		
+		<activity
+            android:name="com.fusionjack.slimota.DownloadActivity"
+            android:label="Download update" />
+		
+		
+		
     </application>
 
 </manifest>

@@ -29,6 +29,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.fusionjack.slimota.MainActivity;
+import com.fusionjack.slimota.DownloadActivity;
 import com.fusionjack.slimota.R;
 import com.fusionjack.slimota.configs.AppConfig;
 import com.fusionjack.slimota.configs.LinkConfig;
@@ -43,6 +44,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.io.InputStream;
+import com.fusionjack.slimota.xml.*;
 
 public class CheckUpdateTask extends AsyncTask<Context, Void, OTADevice> {
 
@@ -157,7 +159,7 @@ public class CheckUpdateTask extends AsyncTask<Context, Void, OTADevice> {
         builder.setSmallIcon(R.drawable.ic_notification_slimota);
         builder.setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_slimota));
 
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent = new Intent(context, DownloadActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         final PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent,
                 PendingIntent.FLAG_ONE_SHOT);
